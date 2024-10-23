@@ -118,7 +118,6 @@ export default function GenericSection(props) {
 
 function Media({ media, hasAnnotations }: { media: any; hasAnnotations: boolean }) {
     const modelName = media.__metadata.modelName;
-    console.log(modelName)
     if (!modelName) {
         throw new Error(`generic section media does not have the 'modelName' property`);
     }

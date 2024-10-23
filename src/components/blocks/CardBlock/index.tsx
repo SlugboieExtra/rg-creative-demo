@@ -13,7 +13,6 @@ export default function CardBlock(props) {
     const flexDirection = styles?.self?.flexDirection ?? 'col';
     const hasTextContent = !!(tagline || title || subtitle || text || actions.length > 0);
     const hasImage = !!image?.url;
-    console.log("Printing CardBlock")
     return (
         <div
             id={elementId}
